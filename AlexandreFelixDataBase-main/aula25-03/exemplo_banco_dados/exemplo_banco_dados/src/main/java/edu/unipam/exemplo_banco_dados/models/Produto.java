@@ -4,19 +4,19 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity 
+@Entity
 public class Produto {
-
+    
     @Id
-    private Long id;
-
+    private Long id; 
+    
     @Column(nullable = false)
     private String nome;
 
     @Column(unique = true, length = 43)
     private String codigoDeBarras;
 
-    public Produto() {}
+    public Produto () {}
 
     public Long getId() {
         return id;
@@ -41,10 +41,8 @@ public class Produto {
     public void setCodigoDeBarras(String codigoDeBarras) {
         this.codigoDeBarras = codigoDeBarras;
     }
-
+ 
     
-    
-
 
 
 
